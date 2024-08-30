@@ -1,15 +1,16 @@
 /** LCARS - Star Trek: Next Generation-inspired Ao3 Skin
 /**
- * Description: Short description.
+ * Description: I don't know if they have Ao3 in the future but if they do, it might look something like this.
  * Version: 1.0.0
  * Last update: 2024-08-28
  * Author: Solovei (https://github.com/solosvejs / https://solosvejs.tumblr.com)
  *
+ *
+ *IMPORTANT: Set "Reversi" as the parent skin!
+
    ========================================================================== */
-
-
-*{
-    font-family: Arial,sans-serif !important;
+* {
+    font-family: Arial, sans-serif !important;
 }
 
 #header,
@@ -17,16 +18,16 @@
 #dashboard,
 #main,
 #footer .module {
-  margin: 0.5em;
-  padding: 1em;
+    margin: 0.5em;
+    padding: 1em;
 }
 
 #outer.wrapper {
-  overflow: clip;
+    overflow: clip;
 }
 
 #inner .region {
-  padding: 1.5em;
+    padding: 1.5em;
 }
 
 
@@ -36,16 +37,15 @@
 }
 
 /*This is the BOTTOM swoosh*/
-
 #inner.wrapper {
     border-left: 100px solid #ff9966;
     border-top: 10px solid #ff9966;
-    border-radius: 3em; 
+    border-radius: 3em;
     border-top-left-radius: 7.9em;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
     margin-left: 2em;
-    }
+}
 
 
 #dashboard.own {
@@ -56,14 +56,18 @@
 
 #inner.wrapper {
     display: flex;
-    }
+}
 
 /* Hover Links
    ========================================================================== */
-#main a:hover, #main a:visited:hover,
-#main a:active, #main a:visited:active,
-#footer a:hover, #footer a:visited:hover,
-#footer a:active, #footer a:visited:hover{
+#main a:hover,
+#main a:visited:hover,
+#main a:active,
+#main a:visited:active,
+#footer a:hover,
+#footer a:visited:hover,
+#footer a:active,
+#footer a:visited:hover {
     color: #333333;
     background: #ffa500;
 }
@@ -71,8 +75,8 @@
 .icon a:hover,
 .symbol .question a:hover,
 a.modal.help:hover {
-    background:none !important ;
-    border:none!important;
+    background: none !important;
+    border: none!important;
 }
 
 
@@ -80,22 +84,19 @@ a.modal.help:hover {
 /* ==========================================================================
    HEADER
    ========================================================================== */
-
 /*This is the TOP swoosh*/
-
 #header {
-  border-left: 100px solid #cc99cc;
-  border-bottom: 10px solid #cc99cc;
-  outline: 0;
-  border-bottom-left-radius: 9.9em;
-  box-shadow: 
-            0 -0px 0 #cc99cc,
-            0 10px 0 #cc99cc, 
-            -6px 0 0 #cc99cc,
-            inset 0 0 5px;
-  margin-bottom: 2em;
-  margin-top: 0px;
-  margin-right: 0px;
+    border-left: 100px solid #cc99cc;
+    border-bottom: 10px solid #cc99cc;
+    outline: 0;
+    border-bottom-left-radius: 9.9em;
+    box-shadow: 0 -0px 0 #cc99cc,
+    0 10px 0 #cc99cc,
+    -6px 0 0 #cc99cc,
+    inset 0 0 5px;
+    margin-bottom: 2em;
+    margin-top: 0px;
+    margin-right: 0px;
 }
 
 #header.region {
@@ -105,41 +106,39 @@ a.modal.help:hover {
 
 
 #header h2 {
-  display: none;
+    display: none;
 }
 
 /* Logo 
    ========================================================================== */
-
 #header .heading * {
     color: #ff7700;
-    font-family: Arial Narrow,Arial,sans-serif; 
+    font-family: Arial Narrow, Arial, sans-serif;
     font-size: 2.5rem;
     font-variant: small-caps;
     font-weight: bold;
-  top: 0.5em;
-  left: 0.5em;
+    top: 0.5em;
+    left: 0.5em;
 }
 
 #header .heading sup {
-   visibility: hidden;
+    visibility: hidden;
 }
 
 /*To change: write something else in the quotation marks where it says "Content:" */
-
 #header .heading sup::before {
-   content: " L.C.A.R.S"; 
-   font-style: normal;
-   visibility: visible;
-   color:#33cc99;
+    content: " L.C.A.R.S";
+    font-style: normal;
+    visibility: visible;
+    color: #33cc99;
 }
 
 #header #greeting {
-  right: 2em;
+    right: 2em;
 }
 
 #header h1 img {
-  opacity: 0.75;
+    opacity: 0.75;
 }
 
 
@@ -147,20 +146,20 @@ a.modal.help:hover {
    Work Blurbs on the main page
    ========================================================================== */
 .group .header {
-  width: 100%;
+    width: 100%;
 }
 
 .group.listbox {
-    border-radius:1em;
+    border-radius: 1em;
 }
 
 #main li.blurb,
 #main.work.meta,
-dl.meta{
+dl.meta {
     border-left: 3px solid #ffcc33;
     border-right: 3px solid #ffa500;
-    border-top: 3px solid  #333333;
-    border-bottom: 3px solid  #333333;
+    border-top: 3px solid #333333;
+    border-bottom: 3px solid #333333;
     border-radius: 2em;
     outline: none;
     box-shadow: none;
@@ -174,16 +173,16 @@ dl.meta{
 }
 
 .blurb h4 a:hover {
-    color:#333333;
+    color: #333333;
 }
 
 
 #main .datetime::before {
-   content: "Stardate "; 
-   font-style: normal;
-   visibility: visible;
-   color:#33cc99;
-   display: block;
+    content: "Stardate ";
+    font-style: normal;
+    visibility: visible;
+    color: #33cc99;
+    display: block;
 }
 
 #kudos {
@@ -197,70 +196,76 @@ dl.meta{
 /* ==========================================================================
    MENU DROPDOWNS
    ========================================================================== */
-#header .primary .dropdown:hover a{
+#header .primary .dropdown:hover a {
     color: #333333;
 }
 
 #header ul.primary .menu a {
-  background: #ffa500;
-  border: 1px solid #e4e7c9;
-  border-radius: 5em;
-  transition: 0.5s all;
+    background: #ffa500;
+    border: 1px solid #e4e7c9;
+    border-radius: 5em;
+    transition: 0.5s all;
 }
 
 #header .dropdown .menu a:hover {
-  color: #333333;
-  background: #e4e7c9;
-  font-weight: bold;
-  transform: translateX(20px);
+    color: #333333;
+    background: #e4e7c9;
+    font-weight: bold;
+    transform: translateX(20px);
 }
 
-#header li.dropdown a.dropdown-toggle{
+#header li.dropdown a.dropdown-toggle {
     text-transform: uppercase;
     color: #333333
 }
 
-#header li.dropdown:nth-of-type(1) a.dropdown-toggle { /*Fandoms*/
-background: #9999ff;
+#header li.dropdown:nth-of-type(1) a.dropdown-toggle {
+    /*Fandoms*/
+    background: #9999ff;
 }
 
-#header li.dropdown:nth-of-type(2) a.dropdown-toggle { /*Browse*/
-background: #ff9900;
+#header li.dropdown:nth-of-type(2) a.dropdown-toggle {
+    /*Browse*/
+    background: #ff9900;
 }
 
-#header li.dropdown:nth-of-type(3) a.dropdown-toggle { /*Search*/
-background: #D37400;
+#header li.dropdown:nth-of-type(3) a.dropdown-toggle {
+    /*Search*/
+    background: #D37400;
 }
 
-#header li.dropdown:nth-of-type(4) a.dropdown-toggle { /*About*/
-background: #BF5656;
+#header li.dropdown:nth-of-type(4) a.dropdown-toggle {
+    /*About*/
+    background: #BF5656;
 }
 
-#header #greeting li.dropdown:nth-of-type(1) a.dropdown-toggle { /*Hi, [name]*/
-background: #9999ff;
-border: 1px solid #333333;
-border-top-left-radius: 5em;
-border-bottom-left-radius: 5em;
-color:#333333;
-text-transform: none;
+#header #greeting li.dropdown:nth-of-type(1) a.dropdown-toggle {
+    /*Hi, [name]*/
+    background: #9999ff;
+    border: 1px solid #333333;
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+    color: #333333;
+    text-transform: none;
 }
 
-#header #greeting li.dropdown:nth-of-type(2) a.dropdown-toggle { /*post*/
-background: #9999ff;
-border: 1px solid #333333;
-color:#333333;
+#header #greeting li.dropdown:nth-of-type(2) a.dropdown-toggle {
+    /*post*/
+    background: #9999ff;
+    border: 1px solid #333333;
+    color: #333333;
 }
 
-#header #greeting a[href^="/users/logout"] { /* log out */
-background: #cc6666;
-border: 1px solid #333333;
-border-top-right-radius: 5em;
-border-bottom-right-radius: 5em;
-color:#333333;
+#header #greeting a[href^="/users/logout"] {
+    /* log out */
+    background: #cc6666;
+    border: 1px solid #333333;
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+    color: #333333;
 }
 
 /* Greeting menu dropdowns */
-
 #header #greeting .dropdown .menu,
 #header #greeting .dropdown .menu li {
     background: transparent;
@@ -268,12 +273,12 @@ color:#333333;
     border-radius: 5em;
     box-shadow: none;
     text-align: right;
-/*     padding:0.1em; */
+    /*     padding:0.1em; */
 }
 
-#header #greeting  .dropdown .menu a {
+#header #greeting .dropdown .menu a {
     background: #9999ff;
-    border:1px solid #5656FC;
+    border: 1px solid #5656FC;
     border-radius: 5em;
     transition: 0.5s all;
 }
@@ -281,12 +286,12 @@ color:#333333;
 #header #greeting .dropdown .menu a:hover {
     background: #e4e7c9;
     font-weight: bold;
-    color:#333333;
+    color: #333333;
     transform: translateX(-20px);
 }
 
 #header #greeting .dropdown .menu .current {
-    border:1px solid #ffd700;
+    border: 1px solid #ffd700;
     background: #666688;
     border-radius: 5em;
     width: 90%;
@@ -299,38 +304,37 @@ color:#333333;
 /*  Search box  in the header
    ========================================================================== */
 #header search {
-  float: none;
-  display: block;
-  margin-top: 0.643em;
+    float: none;
+    display: block;
+    margin-top: 0.643em;
 }
 
-#header .search input {  
-  border: none;
-  background: #ffa500;
-  color:  #333333;
+#header .search input {
+    border: none;
+    background: #ffa500;
+    color: #333333;
 }
 
 #header #search input:hover,
-#header #search input:focus{
+#header #search input:focus {
     color: #333333;
     box-shadow: none;
-    outline:2px solid #87ceeb;
+    outline: 2px solid #87ceeb;
     outline-offset: 2px;
-    border: transparent ;
+    border: transparent;
 }
 
 .search [role="tooltip"] {
-    background:#333333;
+    background: #333333;
     border: 1px solid #ffd700;
-    color:#eeeeee;
+    color: #eeeeee;
     font-size: 105%;
 }
 /* ==========================================================================
    DASHBOARD
    ========================================================================== */
-
 #dashboard {
-  width: 15%;
+    width: 15%;
 }
 
 
@@ -340,21 +344,22 @@ color:#333333;
     border-top-right-radius: 1.4em;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    }
+}
 
-#dashboard ul a:hover, 
+#dashboard ul a:hover,
 #dashboard ul a:active {
     background: #ffa500;
     color: #333333;
-    border-radius: 0.5em !important; /*fix for issue #5 */
+    border-radius: 0.5em !important;
+    /*fix for issue #5 */
 }
 
-#main.dashboard { 
-  margin: 1.5em 1.5em;
-  position: relative;
-  clear: none;
-  float: right;
-  width: 70%;
+#main.dashboard {
+    margin: 1.5em 1.5em;
+    position: relative;
+    clear: none;
+    float: right;
+    width: 70%;
 }
 
 
@@ -364,8 +369,7 @@ color:#333333;
 .actions a:visited,
 .action,
 .actions input,
-input
-button,
+input button,
 .actions label,
 legend,
 textarea,
@@ -373,9 +377,9 @@ input,
 #header ul.primary a,
 .icon {
 
-  border-radius: 0.8em;
+    border-radius: 0.8em;
 
- box-shadow: none;
+    box-shadow: none;
 }
 
 
@@ -392,13 +396,13 @@ form dl dt,
 .splash .news li,
 .filters .group dt.bookmarker,
 .wrapper,
-input[type="submit"]{
-box-shadow: none;
+input[type="submit"] {
+    box-shadow: none;
 }
 
 #dashboard span.current {
     background: #ffcc33;
-    box-shadow:none;
+    box-shadow: none;
     color: #333333;
     text-transform: uppercase;
     font-weight: bold;
@@ -406,12 +410,12 @@ box-shadow: none;
 }
 
 .icon {
-  border-radius: 5em;
+    border-radius: 5em;
 }
 
 .splash .module h3 {
     color: #cc88ff;
-    border-bottom:transparent;
+    border-bottom: transparent;
     border-radius: 3em;
     background: #666688;
     padding: 3px 10px
@@ -420,28 +424,28 @@ box-shadow: none;
 #main .index,
 #header ul.primary,
 #header ul.primary .menu {
-  box-shadow: none;
-  border: none;
-  background: transparent;
+    box-shadow: none;
+    border: none;
+    background: transparent;
 }
 
 #header .primary .menu li,
-.picture .header{ 
-  border-bottom: none;
+.picture .header {
+    border-bottom: none;
 }
 
 .dashboard > form,
 fieldset.search {
-    border:none;
+    border: none;
 }
 
 
 /* Sort and Filter Pane
    ========================================================================== */
-
 #main form.filters fieldset {
     border: 5px solid #ffa500;
-    outline: 2px solid #87ceeb; /* #ff6347 */
+    outline: 2px solid #87ceeb;
+    /* #ff6347 */
     outline-offset: 5px;
     border-radius: 5em;
     box-shadow: none;
@@ -459,70 +463,71 @@ fieldset.search {
 
 #main form.filters input[type="text"] {
     width: 85%;
-    border: 2px solid #ffa500; 
+    border: 2px solid #ffa500;
     padding: .2em .4em;
 }
 
 #main form.filters input[type="submit"] {
-    background: #3c9 }
+    background: #3c9
+}
 
 .filters .expander,
-.filters .expanded .expander{
-  color:#333333;
-  float:left;
-  background-color: #cc88ff;
-  width: 85%;
-  padding:0.75em;
-  border: 2px solid #333333;
-  border-radius: 1em;
-  background-image:none;
+.filters .expanded .expander {
+    color: #333333;
+    float: left;
+    background-color: #cc88ff;
+    width: 85%;
+    padding: 0.75em;
+    border: 2px solid #333333;
+    border-radius: 1em;
+    background-image: none;
 }
 
 .filters .expander:hover {
-  background: #ffd700enrod;
+    background: #ffd700;
 }
 .filters input:checked + .indicator + span,
 .filters [type="checkbox"]:checked + .indicator::before {
-  color: #3c9;}
+    color: #3c9;
+}
 
 
 .filters .group dt.search {
-  margin-top:2em;
+    margin-top: 2em;
 }
 
 
 .filters .group dt.search::before {
-  content: ""
+    content: ""
 }
 
 
 /* ==========================================================================
  BUTTONS
    ========================================================================== */
-
 /* Code adapted from Dusty Buttons Skin! https://archiveofourown.org/skins/897 */
-
 #main .actions a,
 #main .actions a:visited,
 #main .actions input[type="submit"],
 #main .actions span,
-.action, .action:link,
+.action,
+.action:link,
 p.submit input {
     box-shadow: none;
     background: #ff6347;
     border-radius: 5em;
     text-transform: uppercase;
-   font-family: Arial, sans-serif;
-  letter-spacing: 0.06em;
-  color: #333333;
+    font-family: Arial, sans-serif;
+    letter-spacing: 0.06em;
+    color: #333333;
 }
 
 #main .actions a:hover,
 #main .actions input:hover,
 p.submit input:hover {
-  box-shadow: inset 1px 1px 2px;
-  text-shadow: none;
-  color: #e4e7c9 !important;
+    box-shadow: inset 1px 1px 2px;
+    text-shadow: none;
+    color: #e4e7c9 !important;
 }
 
 
@@ -541,7 +546,9 @@ p.submit input:hover {
 }
 
 
-#main .actions li .current {background-color: #cc6666}
+#main .actions li .current {
+    background-color: #cc6666
+}
 
 ol.pagination.actions a,
 #alphabet a {
@@ -552,53 +559,52 @@ ol.pagination.actions a,
     border-left: none;
     border-right: none;
     border-radius: 0;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 }
 
 ol.pagination.actions a:hover {
-    background:#ff6347;
+    background: #ff6347;
     color: #333333;
 }
 
 #main span.action.top,
-#main span.action.top a { 
-    background:none;
+#main span.action.top a {
+    background: none;
     color: whitesmoke;
 }
 
 /* Comment box
    ========================================================================== */
- .comment fieldset {
+.comment fieldset {
     border: 2px solid #666688;
     border-radius: 2em;
-    box-shadow:none;
+    box-shadow: none;
     margin-bottom: 2em;
     margin-top: 2em;
-    }
+}
 
 div.comment,
 .comment div.icon {
     border: none
-  }
+}
 .thread .comment,
 li ol.thread .comment {
-    outline:none;
+    outline: none;
     box-shadow: none;
     border-left: 2px solid #cc6666;
     border-bottom: 10px solid #cc6666;
-    border-top:transparent;
+    border-top: transparent;
     border-right: transparent;
     border-top-left-radius: 0;
     border-bottom-left-radius: 2em;
     border-top-right-radius: 2.5em;
-    margin: 2em 0em; 
+    margin: 2em 0em;
 }
 
 /*this adds an arrow to reply comments and indents them slightly*/
-
 li ol.thread .comment::before {
-    position:relative;
-    right:2.5em;
+    position: relative;
+    right: 2.5em;
     content: "▶▶";
     list-style-position: outside;
     color: #ffd700;
@@ -612,19 +618,17 @@ h4.byline,
 /* ==========================================================================
    Footer
    ========================================================================== */
-
 #footer,
 #footer.module,
-.group, .group .group,
+.group,
+.group .group,
 .draft .wrapper {
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 /*this is the bottom (purple) swoosh*/
-
-
 #outer #footer {
-    background:none;
+    background: none;
     margin-top: 7px;
     margin-left: 33px;
     margin-bottom: 10px;
@@ -637,11 +641,11 @@ h4.byline,
 #footer .secondary li {
     border: 1px solid #ffd700;
     padding: 2px;
-    border-radius: 2em    
+    border-radius: 2em
 }
 
-#footer .secondary li:hover{
-    background:#cc6666;
+#footer .secondary li:hover {
+    background: #cc6666;
 }
 
 #footer .actions .secondary a {
@@ -651,25 +655,27 @@ h4.byline,
 /* ==========================================================================
   Various forms - New work, edit, etc. 
    ========================================================================== */
-
-form .notice, form ul.notes {
+form .notice,
+form ul.notes {
     color: #ff6347;
     box-shadow: none;
     border: 1px solid #cc88ff;
 }
 
 /* Borders around forms! */
-
-textarea, 
-#main .verbose legend, 
+textarea,
+#main .verbose legend,
 .verbose fieldset,
-.notice, ul.notes,
-input, textarea,
+.notice,
+ul.notes,
+input,
+textarea,
 table,
 th,
 td:hover,
 tr:hover,
-#modal, .ui-sortable li,
+#modal,
+.ui-sortable li,
 .required dt,
 .autocomplete dt,
 .system .intro,
@@ -679,7 +685,7 @@ div.dynamic,
 .dynamic form,
 #ui-datepicker-div,
 .ui-datepicker table,
-#new_tag_search fieldset{
+#new_tag_search fieldset {
     border: 3px solid #666688;
 }
 
@@ -694,17 +700,15 @@ div.dynamic,
 }
 
 /*To change: write something else in the quotation marks where it says "content:" */
-
-
 .flash.notice::before {
-        content: "SYSTEM NOTICE "
-        color: #cc88ff;
-        font-weight:bolder;
-        font-size: 150%;
+    content: "SYSTEM NOTICE " ;
+    color: #cc88ff;
+    font-weight: bolder;
+    font-size: 150%;
 }
 
 .work.meta dt,
-dl.meta.group dt{
+dl.meta.group dt {
     text-align: right;
     margin-right: 0.5em;
     font-weight: bold;
@@ -712,12 +716,11 @@ dl.meta.group dt{
 
 /* Tags Links on a work
    ========================================================================== */
-
 /*Border of the tags*/
 a.tag,
 a.tag:visited,
 a.tag:link,
-.splash .favorite li:nth-of-type(2n+1) a{
+.splash .favorite li:nth-of-type(2n+1) a {
     display: inline-block;
     padding: 3px 6px;
     margin: 4px 0px;
@@ -727,10 +730,10 @@ a.tag:link,
 }
 
 
-a.tag:visited{
+a.tag:visited {
     color: #eeeeee;
     background: #525884;
-    font-style: italic; 
+    font-style: italic;
 }
 
 a.tag:hover,
@@ -738,8 +741,8 @@ a.tag:visited:hover,
 .splash .favorite li:nth-of-type(2n+1) a:hover,
 .splash .favorite li:nth-of-type(2n+1) a:visited:hover,
 h5.fandoms.heading .tag:hover,
-h5.fandoms.heading .tag:visited:hover{
-    background:#ffbbaa;
+h5.fandoms.heading .tag:visited:hover {
+    background: #ffbbaa;
     color: #333333;
 }
 
@@ -752,7 +755,7 @@ h5.fandoms.heading .tag {
 
 /*Removes the comma between tags*/
 .commas li:after {
-  content: "";
+    content: "";
 }
 
 .favorite {
@@ -767,15 +770,13 @@ h5.fandoms.heading .tag {
 /*-----------------
 Stuff on the "new work" page + other forms
 --------------------- */
-
-
-#main .verbose legend { 
+#main .verbose legend {
     background: #cc88ff;
-    color:#333333;
+    color: #333333;
 }
 .search input[type="text"]:focus,
 .verbose input[type="text"]:focus {
-    border:3px solid #87ceeb;
+    border: 3px solid #87ceeb;
 }
 
 .datetime select {
@@ -784,10 +785,10 @@ Stuff on the "new work" page + other forms
 
 
 fieldset dt,
-dt.required { 
-  text-align: right;
-    border-bottom:none;
-    color: ##ffaa00;
+dt.required {
+    text-align: right;
+    border-bottom: none;
+    color: #ffaa00;
 }
 
 
@@ -796,8 +797,8 @@ dt.required {
     background: #d37400;
 }
 
-li.added  {
-    color: #ffa500red;
+li.added {
+    color: #ffa500;
     font-weight: bold;
 }
 
@@ -812,8 +813,8 @@ li.added.selected {
 
 .event .userstuff {
     background: #3E3E3E;
-    border: 3px solid #ffd700enrod;
-    border-radius:2.5em;
+    border: 3px solid #ffd700;
+    border-radius: 2.5em;
     margin-bottom: 1em
 }
 
@@ -825,17 +826,16 @@ li.added.selected {
 }
 
 /* Subscriptions Edit */
-
 dl.index dd {
     background: transparent;
     box-shadow: none;
-    border-bottom: 2px solid #ffd700enrod;
+    border-bottom: 2px solid #ffd700;
     padding-bottom: 1em
 }
 
 dl.index dt::before {
     content: "»";
-    font-size: 1em;     
+    font-size: 1em;
 }
 
 .subscription .edit_subscription::before {

@@ -1,0 +1,849 @@
+/** LCARS - Star Trek: Next Generation-inspired Ao3 Skin
+/**
+ * Description: Short description.
+ * Version: 1.0.0
+ * Last update: 2024-08-28
+ * Author: Solovei (https://github.com/solosvejs / https://solosvejs.tumblr.com)
+ *
+   ========================================================================== */
+
+
+*{
+    font-family: Arial,sans-serif !important;
+}
+
+#header,
+#header,
+#dashboard,
+#main,
+#footer .module {
+  margin: 0.5em;
+  padding: 1em;
+}
+
+#outer.wrapper {
+  overflow: clip;
+}
+
+#inner .region {
+  padding: 1.5em;
+}
+
+
+
+#inner .group:not(ul) {
+    padding: 0.26em;
+}
+
+/*This is the BOTTOM swoosh*/
+
+#inner.wrapper {
+    border-left: 100px solid #ff9966;
+    border-top: 10px solid #ff9966;
+    border-radius: 3em; 
+    border-top-left-radius: 7.9em;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 2em;
+    }
+
+
+#dashboard.own {
+    float: initial;
+    border: none;
+    box-shadow: none
+}
+
+#inner.wrapper {
+    display: flex;
+    }
+
+/* Hover Links
+   ========================================================================== */
+#main a:hover, #main a:visited:hover,
+#main a:active, #main a:visited:active,
+#footer a:hover, #footer a:visited:hover,
+#footer a:active, #footer a:visited:hover{
+    color: #333333;
+    background: #ffa500;
+}
+
+.icon a:hover,
+.symbol .question a:hover,
+a.modal.help:hover {
+    background:none !important ;
+    border:none!important;
+}
+
+
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+/*This is the TOP swoosh*/
+
+#header {
+  border-left: 100px solid #cc99cc;
+  border-bottom: 10px solid #cc99cc;
+  outline: 0;
+  border-bottom-left-radius: 9.9em;
+  box-shadow: 
+            0 -0px 0 #cc99cc,
+            0 10px 0 #cc99cc, 
+            -6px 0 0 #cc99cc,
+            inset 0 0 5px;
+  margin-bottom: 2em;
+  margin-top: 0px;
+  margin-right: 0px;
+}
+
+#header.region {
+    color: #333333
+}
+
+
+
+#header h2 {
+  display: none;
+}
+
+/* Logo 
+   ========================================================================== */
+
+#header .heading * {
+    color: #ff7700;
+    font-family: Arial Narrow,Arial,sans-serif; 
+    font-size: 2.5rem;
+    font-variant: small-caps;
+    font-weight: bold;
+  top: 0.5em;
+  left: 0.5em;
+}
+
+#header .heading sup {
+   visibility: hidden;
+}
+
+/*To change: write something else in the quotation marks where it says "Content:" */
+
+#header .heading sup::before {
+   content: " L.C.A.R.S"; 
+   font-style: normal;
+   visibility: visible;
+   color:#33cc99;
+}
+
+#header #greeting {
+  right: 2em;
+}
+
+#header h1 img {
+  opacity: 0.75;
+}
+
+
+/* ==========================================================================
+   Work Blurbs on the main page
+   ========================================================================== */
+.group .header {
+  width: 100%;
+}
+
+.group.listbox {
+    border-radius:1em;
+}
+
+#main li.blurb,
+#main.work.meta,
+dl.meta{
+    border-left: 3px solid #ffcc33;
+    border-right: 3px solid #ffa500;
+    border-top: 3px solid  #333333;
+    border-bottom: 3px solid  #333333;
+    border-radius: 2em;
+    outline: none;
+    box-shadow: none;
+    background: #3E3E3E;
+}
+
+/* Links in blurb headings - title/author */
+.blurb h4 a:link,
+.blurb h4 a:active {
+    color: #ffa500;
+}
+
+.blurb h4 a:hover {
+    color:#333333;
+}
+
+
+#main .datetime::before {
+   content: "Stardate "; 
+   font-style: normal;
+   visibility: visible;
+   color:#33cc99;
+   display: block;
+}
+
+#kudos {
+    border-radius: 3em;
+    outline: none;
+}
+.footnote {
+    font-size: 100%
+}
+
+/* ==========================================================================
+   MENU DROPDOWNS
+   ========================================================================== */
+#header .primary .dropdown:hover a{
+    color: #333333;
+}
+
+#header ul.primary .menu a {
+  background: #ffa500;
+  border: 1px solid #e4e7c9;
+  border-radius: 5em;
+  transition: 0.5s all;
+}
+
+#header .dropdown .menu a:hover {
+  color: #333333;
+  background: #e4e7c9;
+  font-weight: bold;
+  transform: translateX(20px);
+}
+
+#header li.dropdown a.dropdown-toggle{
+    text-transform: uppercase;
+    color: #333333
+}
+
+#header li.dropdown:nth-of-type(1) a.dropdown-toggle { /*Fandoms*/
+background: #9999ff;
+}
+
+#header li.dropdown:nth-of-type(2) a.dropdown-toggle { /*Browse*/
+background: #ff9900;
+}
+
+#header li.dropdown:nth-of-type(3) a.dropdown-toggle { /*Search*/
+background: #D37400;
+}
+
+#header li.dropdown:nth-of-type(4) a.dropdown-toggle { /*About*/
+background: #BF5656;
+}
+
+#header #greeting li.dropdown:nth-of-type(1) a.dropdown-toggle { /*Hi, [name]*/
+background: #9999ff;
+border: 1px solid #333333;
+border-top-left-radius: 5em;
+border-bottom-left-radius: 5em;
+color:#333333;
+text-transform: none;
+}
+
+#header #greeting li.dropdown:nth-of-type(2) a.dropdown-toggle { /*post*/
+background: #9999ff;
+border: 1px solid #333333;
+color:#333333;
+}
+
+#header #greeting a[href^="/users/logout"] { /* log out */
+background: #cc6666;
+border: 1px solid #333333;
+border-top-right-radius: 5em;
+border-bottom-right-radius: 5em;
+color:#333333;
+}
+
+/* Greeting menu dropdowns */
+
+#header #greeting .dropdown .menu,
+#header #greeting .dropdown .menu li {
+    background: transparent;
+    border: transparent;
+    border-radius: 5em;
+    box-shadow: none;
+    text-align: right;
+/*     padding:0.1em; */
+}
+
+#header #greeting  .dropdown .menu a {
+    background: #9999ff;
+    border:1px solid #5656FC;
+    border-radius: 5em;
+    transition: 0.5s all;
+}
+
+#header #greeting .dropdown .menu a:hover {
+    background: #e4e7c9;
+    font-weight: bold;
+    color:#333333;
+    transform: translateX(-20px);
+}
+
+#header #greeting .dropdown .menu .current {
+    border:1px solid #ffd700;
+    background: #666688;
+    border-radius: 5em;
+    width: 90%;
+}
+
+#header input[type="text"] {
+    color: #333333;
+}
+
+/*  Search box  in the header
+   ========================================================================== */
+#header search {
+  float: none;
+  display: block;
+  margin-top: 0.643em;
+}
+
+#header .search input {  
+  border: none;
+  background: #ffa500;
+  color:  #333333;
+}
+
+#header #search input:hover,
+#header #search input:focus{
+    color: #333333;
+    box-shadow: none;
+    outline:2px solid #87ceeb;
+    outline-offset: 2px;
+    border: transparent ;
+}
+
+.search [role="tooltip"] {
+    background:#333333;
+    border: 1px solid #ffd700;
+    color:#eeeeee;
+    font-size: 105%;
+}
+/* ==========================================================================
+   DASHBOARD
+   ========================================================================== */
+
+#dashboard {
+  width: 15%;
+}
+
+
+#dashboard ul {
+    border-top: 3px solid #cc6666;
+    border-right: 3px solid #cc6666;
+    border-top-right-radius: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    }
+
+#dashboard ul a:hover, 
+#dashboard ul a:active {
+    background: #ffa500;
+    color: #333333;
+    border-radius: 0.5em !important; /*fix for issue #5 */
+}
+
+#main.dashboard { 
+  margin: 1.5em 1.5em;
+  position: relative;
+  clear: none;
+  float: right;
+  width: 70%;
+}
+
+
+.blurb ul.required-tags li span,
+.bookmark .status span,
+.actions a,
+.actions a:visited,
+.action,
+.actions input,
+input
+button,
+.actions label,
+legend,
+textarea,
+input,
+#header ul.primary a,
+.icon {
+
+  border-radius: 0.8em;
+
+ box-shadow: none;
+}
+
+
+#header ul.primary,
+#footer,
+#dashboard ul,
+.group.listbox,
+form blockquote.userstuff,
+div.comment,
+li.comment,
+.toggled form,
+form dl dt,
+.bookmark .status span,
+.splash .news li,
+.filters .group dt.bookmarker,
+.wrapper,
+input[type="submit"]{
+box-shadow: none;
+}
+
+#dashboard span.current {
+    background: #ffcc33;
+    box-shadow:none;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: bold;
+    transform: translateX(30px)
+}
+
+.icon {
+  border-radius: 5em;
+}
+
+.splash .module h3 {
+    color: #cc88ff;
+    border-bottom:transparent;
+    border-radius: 3em;
+    background: #666688;
+    padding: 3px 10px
+}
+
+#main .index,
+#header ul.primary,
+#header ul.primary .menu {
+  box-shadow: none;
+  border: none;
+  background: transparent;
+}
+
+#header .primary .menu li,
+.picture .header{ 
+  border-bottom: none;
+}
+
+.dashboard > form,
+fieldset.search {
+    border:none;
+}
+
+
+/* Sort and Filter Pane
+   ========================================================================== */
+
+#main form.filters fieldset {
+    border: 5px solid #ffa500;
+    outline: 2px solid #87ceeb; /* #ff6347 */
+    outline-offset: 5px;
+    border-radius: 5em;
+    box-shadow: none;
+}
+
+#main form.filters fieldset dd,
+.filters .group dt.bookmarker {
+    border: none;
+}
+
+#main form.filters fieldset h4 {
+    font-family: sans-serif;
+    color: #ff6347;
+}
+
+#main form.filters input[type="text"] {
+    width: 85%;
+    border: 2px solid #ffa500; 
+    padding: .2em .4em;
+}
+
+#main form.filters input[type="submit"] {
+    background: #3c9 }
+
+.filters .expander,
+.filters .expanded .expander{
+  color:#333333;
+  float:left;
+  background-color: #cc88ff;
+  width: 85%;
+  padding:0.75em;
+  border: 2px solid #333333;
+  border-radius: 1em;
+  background-image:none;
+}
+
+.filters .expander:hover {
+  background: #ffd700enrod;
+}
+.filters input:checked + .indicator + span,
+.filters [type="checkbox"]:checked + .indicator::before {
+  color: #3c9;}
+
+
+.filters .group dt.search {
+  margin-top:2em;
+}
+
+
+.filters .group dt.search::before {
+  content: ""
+}
+
+
+/* ==========================================================================
+ BUTTONS
+   ========================================================================== */
+
+/* Code adapted from Dusty Buttons Skin! https://archiveofourown.org/skins/897 */
+
+#main .actions a,
+#main .actions a:visited,
+#main .actions input[type="submit"],
+#main .actions span,
+.action, .action:link,
+p.submit input {
+    box-shadow: none;
+    background: #ff6347;
+    border-radius: 5em;
+    text-transform: uppercase;
+   font-family: Arial, sans-serif;
+  letter-spacing: 0.06em;
+  color: #333333;
+}
+
+#main .actions a:hover,
+#main .actions input:hover,
+p.submit input:hover {
+  box-shadow: inset 1px 1px 2px;
+  text-shadow: none;
+  color: #e4e7c9 !important;
+}
+
+
+#main .actions li:nth-of-type(1) > * {
+    border-top-left-radius: 5em;
+    border-bottom-left-radius: 5em;
+}
+
+#main .actions li > * {
+    border-radius: 0;
+}
+
+#main .actions li:nth-last-of-type(1) > * {
+    border-top-right-radius: 5em;
+    border-bottom-right-radius: 5em;
+}
+
+
+#main .actions li .current {background-color: #cc6666}
+
+ol.pagination.actions a,
+#alphabet a {
+    box-shadow: none;
+    background: none;
+    border-top: 2px solid #ff6347;
+    border-bottom: 2px solid #ff6347;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    text-transform: uppercase; 
+}
+
+ol.pagination.actions a:hover {
+    background:#ff6347;
+    color: #333333;
+}
+
+#main span.action.top,
+#main span.action.top a { 
+    background:none;
+    color: whitesmoke;
+}
+
+/* Comment box
+   ========================================================================== */
+ .comment fieldset {
+    border: 2px solid #666688;
+    border-radius: 2em;
+    box-shadow:none;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    }
+
+div.comment,
+.comment div.icon {
+    border: none
+  }
+.thread .comment,
+li ol.thread .comment {
+    outline:none;
+    box-shadow: none;
+    border-left: 2px solid #cc6666;
+    border-bottom: 10px solid #cc6666;
+    border-top:transparent;
+    border-right: transparent;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 2em;
+    border-top-right-radius: 2.5em;
+    margin: 2em 0em; 
+}
+
+/*this adds an arrow to reply comments and indents them slightly*/
+
+li ol.thread .comment::before {
+    position:relative;
+    right:2.5em;
+    content: "▶▶";
+    list-style-position: outside;
+    color: #ffd700;
+}
+
+h4.byline,
+.splash .news li {
+    border-bottom: 1.5px solid #ffd700;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+
+#footer,
+#footer.module,
+.group, .group .group,
+.draft .wrapper {
+  background: none;
+  border: none;
+}
+/*this is the bottom (purple) swoosh*/
+
+
+#outer #footer {
+    background:none;
+    margin-top: 7px;
+    margin-left: 33px;
+    margin-bottom: 10px;
+    border-left: 99px solid #cc88ff;
+    border-bottom: 10px solid #cc88ff;
+    border-bottom-left-radius: 183.6px;
+}
+
+
+#footer .secondary li {
+    border: 1px solid #ffd700;
+    padding: 2px;
+    border-radius: 2em    
+}
+
+#footer .secondary li:hover{
+    background:#cc6666;
+}
+
+#footer .actions .secondary a {
+    color: #eeeeee;
+}
+
+/* ==========================================================================
+  Various forms - New work, edit, etc. 
+   ========================================================================== */
+
+form .notice, form ul.notes {
+    color: #ff6347;
+    box-shadow: none;
+    border: 1px solid #cc88ff;
+}
+
+/* Borders around forms! */
+
+textarea, 
+#main .verbose legend, 
+.verbose fieldset,
+.notice, ul.notes,
+input, textarea,
+table,
+th,
+td:hover,
+tr:hover,
+#modal, .ui-sortable li,
+.required dt,
+.autocomplete dt,
+.system .intro,
+.comment_error,
+.kudos_error,
+div.dynamic,
+.dynamic form,
+#ui-datepicker-div,
+.ui-datepicker table,
+#new_tag_search fieldset{
+    border: 3px solid #666688;
+}
+
+
+.flash.notice {
+    box-shadow: none;
+    border-top: none;
+    border-left: 25px solid #cc88ff;
+    border-bottom: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+/*To change: write something else in the quotation marks where it says "content:" */
+
+
+.flash.notice::before {
+        content: "SYSTEM NOTICE "
+        color: #cc88ff;
+        font-weight:bolder;
+        font-size: 150%;
+}
+
+.work.meta dt,
+dl.meta.group dt{
+    text-align: right;
+    margin-right: 0.5em;
+    font-weight: bold;
+}
+
+/* Tags Links on a work
+   ========================================================================== */
+
+/*Border of the tags*/
+a.tag,
+a.tag:visited,
+a.tag:link,
+.splash .favorite li:nth-of-type(2n+1) a{
+    display: inline-block;
+    padding: 3px 6px;
+    margin: 4px 0px;
+    border: 2px solid #9999ff;
+    background: #7788ff;
+    border-radius: 5px;
+}
+
+
+a.tag:visited{
+    color: #eeeeee;
+    background: #525884;
+    font-style: italic; 
+}
+
+a.tag:hover,
+a.tag:visited:hover,
+.splash .favorite li:nth-of-type(2n+1) a:hover,
+.splash .favorite li:nth-of-type(2n+1) a:visited:hover,
+h5.fandoms.heading .tag:hover,
+h5.fandoms.heading .tag:visited:hover{
+    background:#ffbbaa;
+    color: #333333;
+}
+
+
+.fandom.tags .tag,
+h5.fandoms.heading .tag {
+    background-color: #337DB4;
+    border-color: #72A0C2;
+}
+
+/*Removes the comma between tags*/
+.commas li:after {
+  content: "";
+}
+
+.favorite {
+    text-align: right;
+    width: 25%;
+}
+
+.random .tags li {
+    padding-right: .50em;
+}
+
+/*-----------------
+Stuff on the "new work" page + other forms
+--------------------- */
+
+
+#main .verbose legend { 
+    background: #cc88ff;
+    color:#333333;
+}
+.search input[type="text"]:focus,
+.verbose input[type="text"]:focus {
+    border:3px solid #87ceeb;
+}
+
+.datetime select {
+    width: min-content;
+}
+
+
+fieldset dt,
+dt.required { 
+  text-align: right;
+    border-bottom:none;
+    color: ##ffaa00;
+}
+
+
+/* these are the '?" buttons that you occasionally see which explain various fields and buttons */
+.symbol .question {
+    background: #d37400;
+}
+
+li.added  {
+    color: #ffa500red;
+    font-weight: bold;
+}
+
+li.added.selected {
+    border: 2px solid #ffff00;
+    background: none;
+}
+
+.news dl.meta {
+    padding: 1em;
+}
+
+.event .userstuff {
+    background: #3E3E3E;
+    border: 3px solid #ffd700enrod;
+    border-radius:2.5em;
+    margin-bottom: 1em
+}
+
+/* "All fandoms" page */
+.medium.listbox.group {
+    border-top: 2px solid #87ceeb;
+    border-radius: 0;
+    margin-top: 1em;
+}
+
+/* Subscriptions Edit */
+
+dl.index dd {
+    background: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #ffd700enrod;
+    padding-bottom: 1em
+}
+
+dl.index dt::before {
+    content: "»";
+    font-size: 1em;     
+}
+
+.subscription .edit_subscription::before {
+    content: "!!";
+    font-size: larger;
+    color: #ff6347;
+}
+
+.edit_subscription input {
+    background: #9A4E9A;
+}

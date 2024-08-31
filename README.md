@@ -14,13 +14,13 @@ aka "What if AO3 but more _Star Trek: The Next Generation_?"
 
 </p>
 
-<p dir="auto"><img src="https://github.com/solosvejs/LCARS-Ao3-Skin/blob/main/LCaoRs-fandom.png?raw=true" alt="screenshot of the ao3 page for Star Trek: The Next Generation, using the LCARS ao3 skin" width="1115" height="502" align="middle" /></p>
+<p dir="auto"><img src="https://github.com/solosvejs/LCARS-Ao3-Skin/blob/main/LCaoRs-fandom.png?raw=true" alt="screenshot of the ao3 page for Star Trek: The Next Generation, using the LCARS ao3 skin" align="middle" /></p>
 </div>
 <div>
 <p align="center"><em>Work listing<br /></em></p>
 <p align="center">&nbsp;</p>
 <p align="center">&nbsp;</p>
-<p dir="auto"><img src="https://github.com/solosvejs/LCARS-Ao3-Skin/blob/main/LCaoRs-work.png?raw=true" alt="screenshot of a fanfic on Ao3, using the LCARS ao3 skin" width="1115" height="502" align="middle" /></p>
+<p dir="auto"><img src="https://github.com/solosvejs/LCARS-Ao3-Skin/blob/main/LCaoRs-work.png?raw=true" alt="screenshot of a fanfic on Ao3, using the LCARS ao3 skin" align="middle" /></p>
 <p align="center"><em>Viewing a fanfic<br /></em></p> 
   
 # Things to Know
